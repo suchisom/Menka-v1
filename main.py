@@ -62,15 +62,6 @@ st.link_button("Email Me Directly", "mailto:suzzzylabs@gmail.com")
 
 # Add animated background
 
-'''
-with st.sidebar:
-    st.title(" Configuration Sidebar")
-    
-    st.subheader("API Status")
-    st.success("Mistral API Key Loaded" if mistral_api_key else "MISTRAL_API_KEY not found in .env")
-    st.success("Pinecone API Key Loaded" if pinecone_api_key else "PINECONE_API_KEY not found in .env")
-    
-    st.subheader("Pinecone Setup")  '''
 index_name = st.text_input(
         "Pinecone Index Name:", 
         key="pinecone_index_name_input", 
