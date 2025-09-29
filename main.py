@@ -25,6 +25,7 @@ PINECONE_INDEX_DIMENSION = 1024
     # For Streamlit Community Cloud, get the key from st.secrets
 pinecone_api_key = st.secrets["PINECONE_API_KEY"]
 mistral_api_key = st.secrets["MISTRAL_API_KEY"]
+index_name = st.secrets["PINECONE_INDEX_NAME"]
 
 
 #load_dotenv()
