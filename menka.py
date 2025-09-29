@@ -51,6 +51,7 @@ st.markdown(f"""
     </style>
     """, unsafe_allow_html=True)
 
+
 st.markdown("""
 ## Menka: Docs to Info
 
@@ -58,9 +59,11 @@ st.markdown("""
 1.  **Upload docs**: Open the sidebar and upload your sources.
 2.  **Submit & process**: You will have to wait a while.
 3.  **Ask a Question**: The LLM is not really smart but it will get u through ;) .
+4. For feedback and suggestions 
 """)
-
-
+st.write("You can send feedback and suggestions.")
+# This opens email app to compose a new email to me
+st.link_button("Email Me Directly", "mailto:suzzzylabs@gmail.com")
 
 # Add animated background
 
@@ -254,7 +257,7 @@ def main():
     if "messages" not in st.session_state:
         st.session_state.messages = [{
             "role": "assistant", 
-            "content": "Hello! Please upload your documents and process them using the sidebar, then ask me anything about them."
+            "content": "Hello i'm here to assist, enjoy your stay."
         }]
 
     # Display past messages from the history
