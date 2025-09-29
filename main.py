@@ -61,12 +61,7 @@ st.write("You can send feedback and suggestions.")
 st.link_button("Email Me Directly", "mailto:suzzzylabs@gmail.com")
 
 # Add animated background
-
-index_name = st.text_input(
-        "Pinecone Index Name:", 
-        key="pinecone_index_name_input", 
-        value=os.getenv("PINECONE_INDEX_NAME", "mistral-rag-index")
-    )  
+ 
 
 # Funks
 @st.cache_resource
