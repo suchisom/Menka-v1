@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 import time
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from PyPDF2 import PdfReader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.prompts import PromptTemplate
@@ -21,12 +21,7 @@ MISTRAL_MODEL_NAME = "open-mistral-7b"
 # UPDATED: The dimension for Mistral's embedding model is 1024
 PINECONE_INDEX_DIMENSION = 1024
 
-if os.path.exists('.env'):
-    load_dotenv()
-    # For local development, get the key from the .env file
-    mistral_api_key = os.getenv("MISTRAL_API_KEY")
-    pinecone_api_key = os.getenv("PINECONE_API_KEY")
-else:
+
     # For Streamlit Community Cloud, get the key from st.secrets
     pinecone_api_key = st.secrets["PINECONE_API_KEY"]
     mistral_api_key = st.secrets["MISTRAL_API_KEY"]
