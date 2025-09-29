@@ -71,7 +71,7 @@ with st.sidebar:
     st.success("Pinecone API Key Loaded" if pinecone_api_key else "PINECONE_API_KEY not found in .env")
     
     st.subheader("Pinecone Setup")  '''
-    index_name = st.text_input(
+index_name = st.text_input(
         "Pinecone Index Name:", 
         key="pinecone_index_name_input", 
         value=os.getenv("PINECONE_INDEX_NAME", "mistral-rag-index")
