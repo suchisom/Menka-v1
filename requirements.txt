@@ -5,3 +5,4 @@ langchain
 pinecone-client
 langchain-pinecone
 langchain-mistralai
+langchain-community
