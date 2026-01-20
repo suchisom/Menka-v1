@@ -1,9 +1,10 @@
 streamlit
 python-dotenv
-PyPDF2
+pypdf
 langchain
 langchain-community
+langchain-core
 langchain-text-splitters
-pinecone-client
 langchain-pinecone
 langchain-mistralai
+pinecone
