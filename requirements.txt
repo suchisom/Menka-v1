@@ -3,6 +3,7 @@ python-dotenv
 PyPDF2
 langchain
 langchain-community
+langchain-text-splitters
 pinecone-client
 langchain-pinecone
 langchain-mistralai
