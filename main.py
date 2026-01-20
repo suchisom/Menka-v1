@@ -3,6 +3,7 @@ import os
 import time
 #from dotenv import load_dotenv
 from PyPDF2 import PdfReader
+#from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.prompts import PromptTemplate
 from langchain.schema import Document
