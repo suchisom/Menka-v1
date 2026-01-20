@@ -7,7 +7,7 @@ from PyPDF2 import PdfReader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.prompts import PromptTemplate
 from langchain_core.documents import Document
-from langchain.chains.question_answering import load_qa_chain
+from langchain_classic.chains.question_answering import load_qa_chain
 #from langchain.chains.question_answering import load_qa_chain
 
 from pinecone import Pinecone, ServerlessSpec
