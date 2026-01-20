@@ -5,18 +5,14 @@ import time
 from PyPDF2 import PdfReader
 #from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain.prompts import PromptTemplate
-from langchain.schema import Document
+from langchain_core.prompts import PromptTemplate
+from langchain_core.documents import Document
 from langchain.chains.question_answering import load_qa_chain
 from pinecone import Pinecone, ServerlessSpec
 from langchain_pinecone import PineconeVectorStore
 
-# UPDATED: Import both Chat and Embedding models from Mistral
 from langchain_mistralai.chat_models import ChatMistralAI
 from langchain_mistralai.embeddings import MistralAIEmbeddings
-
-
-
 
 MISTRAL_MODEL_NAME = "open-mistral-7b"
 # UPDATED: The dimension for Mistral's embedding model is 1024
